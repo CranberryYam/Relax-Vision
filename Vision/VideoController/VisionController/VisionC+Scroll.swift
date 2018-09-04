@@ -19,18 +19,26 @@ extension VisionController: UIScrollViewDelegate {
            moveScrollView()
     }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        scrollViewOffsetOnStartDrag = scrollView.contentOffset.x
+        startDragOffset = scrollView.contentOffset.x
     }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        layoutManager.handleScrollToEnd(scrollView: scrollView)
+    }
+
     
     private func moveScrollView() {
-        guard scrollViewOffsetOnStartDrag != scrollView.contentOffset.x else {
+        
+        guard startDragOffset != scrollView.contentOffset.x else {
+            
+            previousOffset = scrollView.contentOffset.x
             return
         }
         
         let indexOfPage = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
-        let isRight = scrollView.contentOffset.x > scrollViewOffsetOnStartDrag ? true : false
+        let isRight = scrollView.contentOffset.x > startDragOffset ? true : false
+        previousOffset = scrollView.contentOffset.x
         
-        ContentProvider.share.handleScroll(isRight: isRight, pageInScroll: indexOfPage, doMagic: doInfiniteMagic, doVideo: doVideoPlay)
+        layoutManager.handleScroll(isRight: isRight, pageInScroll: indexOfPage, doMagic: doInfiniteMagic, doVideo: doVideoPlay, scrollView:scrollView)
         delegate?.visionControllerDidPaged()
     }
     
@@ -47,10 +55,10 @@ extension VisionController: UIScrollViewDelegate {
         imageViewTwo.image = imageViewNext.image
         imageViewPrevious.image = imageTwo
         if isRight {
-            imageViewNext.image = ContentProvider.share.getNextImage()
+            imageViewNext.image = layoutManager.getNextImage()
             return
         }
-        imageViewNext.image = ContentProvider.share.getPreviousImage()
+        imageViewNext.image = layoutManager.getPreviousImage()
     }
 
 }

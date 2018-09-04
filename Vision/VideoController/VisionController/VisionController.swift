@@ -14,6 +14,11 @@ protocol VisionDelegate {
 
 class VisionController: UIViewController {
     var delegate:VisionDelegate?
+    lazy var layoutManager:VisionLayoutManager = {
+        let manager = VisionLayoutManager()
+        manager.downloader = VisionMockDownloader()
+        return manager
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +28,15 @@ class VisionController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.scrollView.contentInset = .zero
+        self.scrollView.contentInset = .zero//UIEdgeInsetsMake(0, 0, 0, self.view.bounds.width * -1)
         self.scrollView.contentInsetAdjustmentBehavior = .never
     }
 
     
     //MARK: for Scroll Extension
-    var scrollViewOffsetOnStartDrag: CGFloat = -100
+    var startDragOffset: CGFloat = -100
+    var previousOffset: CGFloat = 0
+    var scrollRight:Bool = true
     
     lazy var scrollView:UIScrollView = {
         let view = UIScrollView()
@@ -70,13 +77,13 @@ class VisionController: UIViewController {
     
     //MARK: Player
     func doVideoPlay(index:Int, pageInScroll:Int) {
-        let url = ContentProvider.share.getCurrentVideoUrl()
+        let url = layoutManager.getCurrentVideoUrl()
         let imageView = images[pageInScroll]
         _ = images.map { $0.jp_stopPlay() }
         imageView.jp_playVideo(with: url)
     }
     public func pauseVideoPlay(complete:(Bool)->Void) {
-        let page = ContentProvider.share.page
+        let page = layoutManager.page
         let image = images[page]
         image.jp_playerStatus == .pause ? image.jp_resume() : image.jp_pause()
         complete(image.jp_playerStatus == .pause)
