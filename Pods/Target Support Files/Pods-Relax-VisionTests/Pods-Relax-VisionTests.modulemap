@@ -1,0 +1,6 @@
+framework module Pods_Relax_VisionTests {
+  umbrella header "Pods-Relax-VisionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

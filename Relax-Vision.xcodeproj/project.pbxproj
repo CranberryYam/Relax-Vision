@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		192FD25D61CAEB02D7CCD81D /* Pods_Relax_VisionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA329AE97C9E7D5DB12923F /* Pods_Relax_VisionTests.framework */; };
+		51662C6B40E637AFDF3357BF /* Pods_Relax_VisionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA243B74AC11DCF2106B6F /* Pods_Relax_VisionUITests.framework */; };
+		80312941213E2353003C4CB6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031293E213E2353003C4CB6 /* Animation.swift */; };
+		80312942213E2353003C4CB6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031293F213E2353003C4CB6 /* UIColor.swift */; };
+		80312943213E2353003C4CB6 /* FromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80312940213E2353003C4CB6 /* FromNib.swift */; };
+		80312947213E256A003C4CB6 /* Video.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80312946213E256A003C4CB6 /* Video.xcassets */; };
+		8044FD44213C8EE400572EF6 /* yp_video_like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8044FD41213C8EE300572EF6 /* yp_video_like@2x.png */; };
+		8044FD45213C8EE400572EF6 /* yp_video_like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8044FD42213C8EE300572EF6 /* yp_video_like@3x.png */; };
+		8044FD46213C8EE400572EF6 /* YPDouYinLikeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8044FD43213C8EE300572EF6 /* YPDouYinLikeAnimation.m */; };
+		805DD22F213E1761007F56C8 /* VisionC+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD228213E1760007F56C8 /* VisionC+Scroll.swift */; };
+		805DD230213E1761007F56C8 /* VisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD229213E1760007F56C8 /* VisionController.swift */; };
+		805DD231213E1761007F56C8 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD22A213E1760007F56C8 /* ContentProvider.swift */; };
+		805DD234213E1761007F56C8 /* VideoC+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD22D213E1760007F56C8 /* VideoC+Gesture.swift */; };
+		805DD237213E178E007F56C8 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD236213E178E007F56C8 /* VideoController.swift */; };
+		8095671B2130EC3D00E2D34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8095671A2130EC3D00E2D34D /* AppDelegate.swift */; };
+		8095671D2130EC3D00E2D34D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8095671C2130EC3D00E2D34D /* ViewController.swift */; };
+		809567202130EC3D00E2D34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8095671E2130EC3D00E2D34D /* Main.storyboard */; };
+		809567222130EC3F00E2D34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809567212130EC3F00E2D34D /* Assets.xcassets */; };
+		809567252130EC3F00E2D34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809567232130EC3F00E2D34D /* LaunchScreen.storyboard */; };
+		809567302130EC3F00E2D34D /* Relax_VisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8095672F2130EC3F00E2D34D /* Relax_VisionTests.swift */; };
+		8095673B2130EC3F00E2D34D /* Relax_VisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8095673A2130EC3F00E2D34D /* Relax_VisionUITests.swift */; };
+		8095676B2130EC7400E2D34D /* JPVideoPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095674D2130EC7400E2D34D /* JPVideoPlayerDownloader.m */; };
+		8095676C2130EC7400E2D34D /* JPVideoPlayerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095674E2130EC7400E2D34D /* JPVideoPlayerCache.m */; };
+		8095676D2130EC7400E2D34D /* UIView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567512130EC7400E2D34D /* UIView+WebVideoCache.m */; };
+		8095676E2130EC7400E2D34D /* JPVideoPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567522130EC7400E2D34D /* JPVideoPlayerCompat.m */; };
+		8095676F2130EC7400E2D34D /* JPVideoPlayerResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567562130EC7400E2D34D /* JPVideoPlayerResourceLoader.m */; };
+		809567702130EC7400E2D34D /* JPVideoPlayerCacheFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095675B2130EC7400E2D34D /* JPVideoPlayerCacheFile.m */; };
+		809567712130EC7400E2D34D /* JPVideoPlayerControlViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095675C2130EC7400E2D34D /* JPVideoPlayerControlViews.m */; };
+		809567722130EC7400E2D34D /* JPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8095675E2130EC7400E2D34D /* JPVideoPlayer.bundle */; };
+		809567732130EC7400E2D34D /* UITableView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567602130EC7400E2D34D /* UITableView+WebVideoCache.m */; };
+		809567742130EC7400E2D34D /* JPVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567612130EC7400E2D34D /* JPVideoPlayerManager.m */; };
+		809567752130EC7400E2D34D /* JPVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567652130EC7400E2D34D /* JPVideoPlayer.m */; };
+		809567762130EC7400E2D34D /* JPVideoPlayerSupportUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567662130EC7400E2D34D /* JPVideoPlayerSupportUtils.m */; };
+		809567772130EC7400E2D34D /* UITableViewCell+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567672130EC7400E2D34D /* UITableViewCell+WebVideoCache.m */; };
+		809567782130EC7400E2D34D /* JPVideoPlayerCachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567682130EC7400E2D34D /* JPVideoPlayerCachePath.m */; };
+		809567792130EC7400E2D34D /* JPResourceLoadingRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 809567692130EC7400E2D34D /* JPResourceLoadingRequestTask.m */; };
+		8095677A2130EC7400E2D34D /* JPVideoPlayerDouyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095676A2130EC7400E2D34D /* JPVideoPlayerDouyinViewController.m */; };
+		ABC6995F7C2671E42BE333F0 /* Pods_Relax_Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E775DA7CFB31B14C9DE1A6 /* Pods_Relax_Vision.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8095672C2130EC3F00E2D34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8095670F2130EC3D00E2D34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809567162130EC3D00E2D34D;
+			remoteInfo = "Relax-Vision";
+		};
+		809567372130EC3F00E2D34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8095670F2130EC3D00E2D34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809567162130EC3D00E2D34D;
+			remoteInfo = "Relax-Vision";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01235C74FCC044C5515EFA88 /* Pods-Relax-VisionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-VisionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-VisionTests/Pods-Relax-VisionTests.release.xcconfig"; sourceTree = "<group>"; };
+		23E775DA7CFB31B14C9DE1A6 /* Pods_Relax_Vision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relax_Vision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA3CA8B116D28360F091B5B /* Pods-Relax-Vision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-Vision.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-Vision/Pods-Relax-Vision.release.xcconfig"; sourceTree = "<group>"; };
+		484B8385DC846640641ECEF7 /* Pods-Relax-VisionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-VisionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-VisionTests/Pods-Relax-VisionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF252D896C72E7C632D7B0D /* Pods-Relax-Vision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-Vision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-Vision/Pods-Relax-Vision.debug.xcconfig"; sourceTree = "<group>"; };
+		57AA243B74AC11DCF2106B6F /* Pods_Relax_VisionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relax_VisionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8031293E213E2353003C4CB6 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		8031293F213E2353003C4CB6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		80312940213E2353003C4CB6 /* FromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromNib.swift; sourceTree = "<group>"; };
+		80312946213E256A003C4CB6 /* Video.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Video.xcassets; sourceTree = "<group>"; };
+		8044FD3F213C8EE300572EF6 /* YPDouYinLikeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDouYinLikeAnimation.h; sourceTree = "<group>"; };
+		8044FD41213C8EE300572EF6 /* yp_video_like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yp_video_like@2x.png"; sourceTree = "<group>"; };
+		8044FD42213C8EE300572EF6 /* yp_video_like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yp_video_like@3x.png"; sourceTree = "<group>"; };
+		8044FD43213C8EE300572EF6 /* YPDouYinLikeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDouYinLikeAnimation.m; sourceTree = "<group>"; };
+		805DD228213E1760007F56C8 /* VisionC+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisionC+Scroll.swift"; sourceTree = "<group>"; };
+		805DD229213E1760007F56C8 /* VisionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionController.swift; sourceTree = "<group>"; };
+		805DD22A213E1760007F56C8 /* ContentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		805DD22D213E1760007F56C8 /* VideoC+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoC+Gesture.swift"; sourceTree = "<group>"; };
+		805DD236213E178E007F56C8 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		809567172130EC3D00E2D34D /* Relax-Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relax-Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8095671A2130EC3D00E2D34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8095671C2130EC3D00E2D34D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8095671F2130EC3D00E2D34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		809567212130EC3F00E2D34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		809567242130EC3F00E2D34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		809567262130EC3F00E2D34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8095672B2130EC3F00E2D34D /* Relax-VisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Relax-VisionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8095672F2130EC3F00E2D34D /* Relax_VisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relax_VisionTests.swift; sourceTree = "<group>"; };
+		809567312130EC3F00E2D34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809567362130EC3F00E2D34D /* Relax-VisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Relax-VisionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8095673A2130EC3F00E2D34D /* Relax_VisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relax_VisionUITests.swift; sourceTree = "<group>"; };
+		8095673C2130EC3F00E2D34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809567492130EC7400E2D34D /* JPVideoPlayerDouyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDouyinViewController.h; sourceTree = "<group>"; };
+		8095674B2130EC7400E2D34D /* JPVideoPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerManager.h; sourceTree = "<group>"; };
+		8095674C2130EC7400E2D34D /* UITableView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+WebVideoCache.h"; sourceTree = "<group>"; };
+		8095674D2130EC7400E2D34D /* JPVideoPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDownloader.m; sourceTree = "<group>"; };
+		8095674E2130EC7400E2D34D /* JPVideoPlayerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCache.m; sourceTree = "<group>"; };
+		8095674F2130EC7400E2D34D /* JPVideoPlayerCacheFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCacheFile.h; sourceTree = "<group>"; };
+		809567502130EC7400E2D34D /* JPVideoPlayerControlViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerControlViews.h; sourceTree = "<group>"; };
+		809567512130EC7400E2D34D /* UIView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebVideoCache.m"; sourceTree = "<group>"; };
+		809567522130EC7400E2D34D /* JPVideoPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCompat.m; sourceTree = "<group>"; };
+		809567532130EC7400E2D34D /* JPVideoPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerProtocol.h; sourceTree = "<group>"; };
+		809567542130EC7400E2D34D /* JPVideoPlayerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerKit.h; sourceTree = "<group>"; };
+		809567552130EC7400E2D34D /* JPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayer.h; sourceTree = "<group>"; };
+		809567562130EC7400E2D34D /* JPVideoPlayerResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerResourceLoader.m; sourceTree = "<group>"; };
+		809567572130EC7400E2D34D /* JPResourceLoadingRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPResourceLoadingRequestTask.h; sourceTree = "<group>"; };
+		809567582130EC7400E2D34D /* JPVideoPlayerCachePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCachePath.h; sourceTree = "<group>"; };
+		809567592130EC7400E2D34D /* UITableViewCell+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WebVideoCache.h"; sourceTree = "<group>"; };
+		8095675A2130EC7400E2D34D /* JPVideoPlayerSupportUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerSupportUtils.h; sourceTree = "<group>"; };
+		8095675B2130EC7400E2D34D /* JPVideoPlayerCacheFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCacheFile.m; sourceTree = "<group>"; };
+		8095675C2130EC7400E2D34D /* JPVideoPlayerControlViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerControlViews.m; sourceTree = "<group>"; };
+		8095675D2130EC7400E2D34D /* JPVideoPlayerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCache.h; sourceTree = "<group>"; };
+		8095675E2130EC7400E2D34D /* JPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPVideoPlayer.bundle; sourceTree = "<group>"; };
+		8095675F2130EC7400E2D34D /* JPVideoPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDownloader.h; sourceTree = "<group>"; };
+		809567602130EC7400E2D34D /* UITableView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WebVideoCache.m"; sourceTree = "<group>"; };
+		809567612130EC7400E2D34D /* JPVideoPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerManager.m; sourceTree = "<group>"; };
+		809567622130EC7400E2D34D /* JPVideoPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCompat.h; sourceTree = "<group>"; };
+		809567632130EC7400E2D34D /* UIView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebVideoCache.h"; sourceTree = "<group>"; };
+		809567642130EC7400E2D34D /* JPVideoPlayerResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerResourceLoader.h; sourceTree = "<group>"; };
+		809567652130EC7400E2D34D /* JPVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayer.m; sourceTree = "<group>"; };
+		809567662130EC7400E2D34D /* JPVideoPlayerSupportUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerSupportUtils.m; sourceTree = "<group>"; };
+		809567672130EC7400E2D34D /* UITableViewCell+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WebVideoCache.m"; sourceTree = "<group>"; };
+		809567682130EC7400E2D34D /* JPVideoPlayerCachePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCachePath.m; sourceTree = "<group>"; };
+		809567692130EC7400E2D34D /* JPResourceLoadingRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPResourceLoadingRequestTask.m; sourceTree = "<group>"; };
+		8095676A2130EC7400E2D34D /* JPVideoPlayerDouyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDouyinViewController.m; sourceTree = "<group>"; };
+		8095677B2130ED1D00E2D34D /* Relax_Vision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Relax_Vision-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A1A338B6EE6E02EE77EF62A /* Pods-Relax-VisionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-VisionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-VisionUITests/Pods-Relax-VisionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7FBC0F8D04E82848F8D2122 /* Pods-Relax-VisionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relax-VisionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relax-VisionUITests/Pods-Relax-VisionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAA329AE97C9E7D5DB12923F /* Pods_Relax_VisionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relax_VisionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809567142130EC3D00E2D34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC6995F7C2671E42BE333F0 /* Pods_Relax_Vision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567282130EC3F00E2D34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192FD25D61CAEB02D7CCD81D /* Pods_Relax_VisionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567332130EC3F00E2D34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51662C6B40E637AFDF3357BF /* Pods_Relax_VisionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54A457F98E73EB0958A0E9BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23E775DA7CFB31B14C9DE1A6 /* Pods_Relax_Vision.framework */,
+				FAA329AE97C9E7D5DB12923F /* Pods_Relax_VisionTests.framework */,
+				57AA243B74AC11DCF2106B6F /* Pods_Relax_VisionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8031293C213E2353003C4CB6 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				8031293D213E2353003C4CB6 /* Tools */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		8031293D213E2353003C4CB6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8031293E213E2353003C4CB6 /* Animation.swift */,
+				8031293F213E2353003C4CB6 /* UIColor.swift */,
+				80312940213E2353003C4CB6 /* FromNib.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8044FD3E213C8EE300572EF6 /* LikeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8044FD3F213C8EE300572EF6 /* YPDouYinLikeAnimation.h */,
+				8044FD43213C8EE300572EF6 /* YPDouYinLikeAnimation.m */,
+				8044FD40213C8EE300572EF6 /* Resources */,
+			);
+			path = LikeAnimation;
+			sourceTree = "<group>";
+		};
+		8044FD40213C8EE300572EF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8044FD41213C8EE300572EF6 /* yp_video_like@2x.png */,
+				8044FD42213C8EE300572EF6 /* yp_video_like@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		805DD226213E1760007F56C8 /* VideoController */ = {
+			isa = PBXGroup;
+			children = (
+				805DD227213E1760007F56C8 /* VisionController */,
+				805DD22D213E1760007F56C8 /* VideoC+Gesture.swift */,
+				805DD236213E178E007F56C8 /* VideoController.swift */,
+				80312946213E256A003C4CB6 /* Video.xcassets */,
+			);
+			path = VideoController;
+			sourceTree = "<group>";
+		};
+		805DD227213E1760007F56C8 /* VisionController */ = {
+			isa = PBXGroup;
+			children = (
+				805DD228213E1760007F56C8 /* VisionC+Scroll.swift */,
+				805DD229213E1760007F56C8 /* VisionController.swift */,
+				805DD22A213E1760007F56C8 /* ContentProvider.swift */,
+			);
+			path = VisionController;
+			sourceTree = "<group>";
+		};
+		8095670E2130EC3D00E2D34D = {
+			isa = PBXGroup;
+			children = (
+				8031293C213E2353003C4CB6 /* Basic */,
+				809567482130EC7400E2D34D /* Vision */,
+				809567192130EC3D00E2D34D /* Relax-Vision */,
+				8095672E2130EC3F00E2D34D /* Relax-VisionTests */,
+				809567392130EC3F00E2D34D /* Relax-VisionUITests */,
+				809567182130EC3D00E2D34D /* Products */,
+				86F1004FA5F0FC410E54E0CA /* Pods */,
+				54A457F98E73EB0958A0E9BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		809567182130EC3D00E2D34D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809567172130EC3D00E2D34D /* Relax-Vision.app */,
+				8095672B2130EC3F00E2D34D /* Relax-VisionTests.xctest */,
+				809567362130EC3F00E2D34D /* Relax-VisionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809567192130EC3D00E2D34D /* Relax-Vision */ = {
+			isa = PBXGroup;
+			children = (
+				8095671A2130EC3D00E2D34D /* AppDelegate.swift */,
+				8095671C2130EC3D00E2D34D /* ViewController.swift */,
+				8095671E2130EC3D00E2D34D /* Main.storyboard */,
+				809567212130EC3F00E2D34D /* Assets.xcassets */,
+				809567232130EC3F00E2D34D /* LaunchScreen.storyboard */,
+				809567262130EC3F00E2D34D /* Info.plist */,
+			);
+			path = "Relax-Vision";
+			sourceTree = "<group>";
+		};
+		8095672E2130EC3F00E2D34D /* Relax-VisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				8095672F2130EC3F00E2D34D /* Relax_VisionTests.swift */,
+				809567312130EC3F00E2D34D /* Info.plist */,
+			);
+			path = "Relax-VisionTests";
+			sourceTree = "<group>";
+		};
+		809567392130EC3F00E2D34D /* Relax-VisionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8095673A2130EC3F00E2D34D /* Relax_VisionUITests.swift */,
+				8095673C2130EC3F00E2D34D /* Info.plist */,
+			);
+			path = "Relax-VisionUITests";
+			sourceTree = "<group>";
+		};
+		809567482130EC7400E2D34D /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				809567492130EC7400E2D34D /* JPVideoPlayerDouyinViewController.h */,
+				8095676A2130EC7400E2D34D /* JPVideoPlayerDouyinViewController.m */,
+				8095677B2130ED1D00E2D34D /* Relax_Vision-Bridging-Header.h */,
+				805DD226213E1760007F56C8 /* VideoController */,
+				8044FD3E213C8EE300572EF6 /* LikeAnimation */,
+				8095674A2130EC7400E2D34D /* JPVideoPlayer */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		8095674A2130EC7400E2D34D /* JPVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8095674B2130EC7400E2D34D /* JPVideoPlayerManager.h */,
+				8095674C2130EC7400E2D34D /* UITableView+WebVideoCache.h */,
+				8095674D2130EC7400E2D34D /* JPVideoPlayerDownloader.m */,
+				8095674E2130EC7400E2D34D /* JPVideoPlayerCache.m */,
+				8095674F2130EC7400E2D34D /* JPVideoPlayerCacheFile.h */,
+				809567502130EC7400E2D34D /* JPVideoPlayerControlViews.h */,
+				809567512130EC7400E2D34D /* UIView+WebVideoCache.m */,
+				809567522130EC7400E2D34D /* JPVideoPlayerCompat.m */,
+				809567532130EC7400E2D34D /* JPVideoPlayerProtocol.h */,
+				809567542130EC7400E2D34D /* JPVideoPlayerKit.h */,
+				809567552130EC7400E2D34D /* JPVideoPlayer.h */,
+				809567562130EC7400E2D34D /* JPVideoPlayerResourceLoader.m */,
+				809567572130EC7400E2D34D /* JPResourceLoadingRequestTask.h */,
+				809567582130EC7400E2D34D /* JPVideoPlayerCachePath.h */,
+				809567592130EC7400E2D34D /* UITableViewCell+WebVideoCache.h */,
+				8095675A2130EC7400E2D34D /* JPVideoPlayerSupportUtils.h */,
+				8095675B2130EC7400E2D34D /* JPVideoPlayerCacheFile.m */,
+				8095675C2130EC7400E2D34D /* JPVideoPlayerControlViews.m */,
+				8095675D2130EC7400E2D34D /* JPVideoPlayerCache.h */,
+				8095675E2130EC7400E2D34D /* JPVideoPlayer.bundle */,
+				8095675F2130EC7400E2D34D /* JPVideoPlayerDownloader.h */,
+				809567602130EC7400E2D34D /* UITableView+WebVideoCache.m */,
+				809567612130EC7400E2D34D /* JPVideoPlayerManager.m */,
+				809567622130EC7400E2D34D /* JPVideoPlayerCompat.h */,
+				809567632130EC7400E2D34D /* UIView+WebVideoCache.h */,
+				809567642130EC7400E2D34D /* JPVideoPlayerResourceLoader.h */,
+				809567652130EC7400E2D34D /* JPVideoPlayer.m */,
+				809567662130EC7400E2D34D /* JPVideoPlayerSupportUtils.m */,
+				809567672130EC7400E2D34D /* UITableViewCell+WebVideoCache.m */,
+				809567682130EC7400E2D34D /* JPVideoPlayerCachePath.m */,
+				809567692130EC7400E2D34D /* JPResourceLoadingRequestTask.m */,
+			);
+			path = JPVideoPlayer;
+			sourceTree = "<group>";
+		};
+		86F1004FA5F0FC410E54E0CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BF252D896C72E7C632D7B0D /* Pods-Relax-Vision.debug.xcconfig */,
+				2AA3CA8B116D28360F091B5B /* Pods-Relax-Vision.release.xcconfig */,
+				484B8385DC846640641ECEF7 /* Pods-Relax-VisionTests.debug.xcconfig */,
+				01235C74FCC044C5515EFA88 /* Pods-Relax-VisionTests.release.xcconfig */,
+				C7FBC0F8D04E82848F8D2122 /* Pods-Relax-VisionUITests.debug.xcconfig */,
+				8A1A338B6EE6E02EE77EF62A /* Pods-Relax-VisionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809567162130EC3D00E2D34D /* Relax-Vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8095673F2130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-Vision" */;
+			buildPhases = (
+				48CBF98DE1D0C2EE5051C958 /* [CP] Check Pods Manifest.lock */,
+				809567132130EC3D00E2D34D /* Sources */,
+				809567142130EC3D00E2D34D /* Frameworks */,
+				809567152130EC3D00E2D34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Relax-Vision";
+			productName = "Relax-Vision";
+			productReference = 809567172130EC3D00E2D34D /* Relax-Vision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8095672A2130EC3F00E2D34D /* Relax-VisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809567422130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-VisionTests" */;
+			buildPhases = (
+				A904584147C83BE9A2C59ADF /* [CP] Check Pods Manifest.lock */,
+				809567272130EC3F00E2D34D /* Sources */,
+				809567282130EC3F00E2D34D /* Frameworks */,
+				809567292130EC3F00E2D34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8095672D2130EC3F00E2D34D /* PBXTargetDependency */,
+			);
+			name = "Relax-VisionTests";
+			productName = "Relax-VisionTests";
+			productReference = 8095672B2130EC3F00E2D34D /* Relax-VisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		809567352130EC3F00E2D34D /* Relax-VisionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809567452130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-VisionUITests" */;
+			buildPhases = (
+				EBA8E5C11DA983440D9D7362 /* [CP] Check Pods Manifest.lock */,
+				809567322130EC3F00E2D34D /* Sources */,
+				809567332130EC3F00E2D34D /* Frameworks */,
+				809567342130EC3F00E2D34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				809567382130EC3F00E2D34D /* PBXTargetDependency */,
+			);
+			name = "Relax-VisionUITests";
+			productName = "Relax-VisionUITests";
+			productReference = 809567362130EC3F00E2D34D /* Relax-VisionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8095670F2130EC3D00E2D34D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = henryyi;
+				TargetAttributes = {
+					809567162130EC3D00E2D34D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8095672A2130EC3F00E2D34D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 809567162130EC3D00E2D34D;
+					};
+					809567352130EC3F00E2D34D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 809567162130EC3D00E2D34D;
+					};
+				};
+			};
+			buildConfigurationList = 809567122130EC3D00E2D34D /* Build configuration list for PBXProject "Relax-Vision" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8095670E2130EC3D00E2D34D;
+			productRefGroup = 809567182130EC3D00E2D34D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809567162130EC3D00E2D34D /* Relax-Vision */,
+				8095672A2130EC3F00E2D34D /* Relax-VisionTests */,
+				809567352130EC3F00E2D34D /* Relax-VisionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809567152130EC3D00E2D34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809567252130EC3F00E2D34D /* LaunchScreen.storyboard in Resources */,
+				809567222130EC3F00E2D34D /* Assets.xcassets in Resources */,
+				80312947213E256A003C4CB6 /* Video.xcassets in Resources */,
+				8044FD44213C8EE400572EF6 /* yp_video_like@2x.png in Resources */,
+				8044FD45213C8EE400572EF6 /* yp_video_like@3x.png in Resources */,
+				809567722130EC7400E2D34D /* JPVideoPlayer.bundle in Resources */,
+				809567202130EC3D00E2D34D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567292130EC3F00E2D34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567342130EC3F00E2D34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48CBF98DE1D0C2EE5051C958 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relax-Vision-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A904584147C83BE9A2C59ADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relax-VisionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA8E5C11DA983440D9D7362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relax-VisionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		809567132130EC3D00E2D34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809567752130EC7400E2D34D /* JPVideoPlayer.m in Sources */,
+				805DD230213E1761007F56C8 /* VisionController.swift in Sources */,
+				805DD237213E178E007F56C8 /* VideoController.swift in Sources */,
+				809567772130EC7400E2D34D /* UITableViewCell+WebVideoCache.m in Sources */,
+				8095676E2130EC7400E2D34D /* JPVideoPlayerCompat.m in Sources */,
+				8095676F2130EC7400E2D34D /* JPVideoPlayerResourceLoader.m in Sources */,
+				8095671D2130EC3D00E2D34D /* ViewController.swift in Sources */,
+				805DD22F213E1761007F56C8 /* VisionC+Scroll.swift in Sources */,
+				809567792130EC7400E2D34D /* JPResourceLoadingRequestTask.m in Sources */,
+				8095676D2130EC7400E2D34D /* UIView+WebVideoCache.m in Sources */,
+				80312941213E2353003C4CB6 /* Animation.swift in Sources */,
+				805DD234213E1761007F56C8 /* VideoC+Gesture.swift in Sources */,
+				805DD231213E1761007F56C8 /* ContentProvider.swift in Sources */,
+				809567712130EC7400E2D34D /* JPVideoPlayerControlViews.m in Sources */,
+				809567732130EC7400E2D34D /* UITableView+WebVideoCache.m in Sources */,
+				8095677A2130EC7400E2D34D /* JPVideoPlayerDouyinViewController.m in Sources */,
+				809567782130EC7400E2D34D /* JPVideoPlayerCachePath.m in Sources */,
+				80312943213E2353003C4CB6 /* FromNib.swift in Sources */,
+				809567762130EC7400E2D34D /* JPVideoPlayerSupportUtils.m in Sources */,
+				8044FD46213C8EE400572EF6 /* YPDouYinLikeAnimation.m in Sources */,
+				80312942213E2353003C4CB6 /* UIColor.swift in Sources */,
+				8095676C2130EC7400E2D34D /* JPVideoPlayerCache.m in Sources */,
+				809567742130EC7400E2D34D /* JPVideoPlayerManager.m in Sources */,
+				809567702130EC7400E2D34D /* JPVideoPlayerCacheFile.m in Sources */,
+				8095671B2130EC3D00E2D34D /* AppDelegate.swift in Sources */,
+				8095676B2130EC7400E2D34D /* JPVideoPlayerDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567272130EC3F00E2D34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809567302130EC3F00E2D34D /* Relax_VisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809567322130EC3F00E2D34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8095673B2130EC3F00E2D34D /* Relax_VisionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8095672D2130EC3F00E2D34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809567162130EC3D00E2D34D /* Relax-Vision */;
+			targetProxy = 8095672C2130EC3F00E2D34D /* PBXContainerItemProxy */;
+		};
+		809567382130EC3F00E2D34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809567162130EC3D00E2D34D /* Relax-Vision */;
+			targetProxy = 809567372130EC3F00E2D34D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8095671E2130EC3D00E2D34D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8095671F2130EC3D00E2D34D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		809567232130EC3F00E2D34D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809567242130EC3F00E2D34D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8095673D2130EC3F00E2D34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8095673E2130EC3F00E2D34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809567402130EC3F00E2D34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF252D896C72E7C632D7B0D /* Pods-Relax-Vision.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-Vision/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Vision/Relax_Vision-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		809567412130EC3F00E2D34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA3CA8B116D28360F091B5B /* Pods-Relax-Vision.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-Vision/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Vision/Relax_Vision-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		809567432130EC3F00E2D34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484B8385DC846640641ECEF7 /* Pods-Relax-VisionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-VisionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-VisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relax-Vision.app/Relax-Vision";
+			};
+			name = Debug;
+		};
+		809567442130EC3F00E2D34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01235C74FCC044C5515EFA88 /* Pods-Relax-VisionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-VisionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-VisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relax-Vision.app/Relax-Vision";
+			};
+			name = Release;
+		};
+		809567462130EC3F00E2D34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FBC0F8D04E82848F8D2122 /* Pods-Relax-VisionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-VisionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-VisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Relax-Vision";
+			};
+			name = Debug;
+		};
+		809567472130EC3F00E2D34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1A338B6EE6E02EE77EF62A /* Pods-Relax-VisionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
+				INFOPLIST_FILE = "Relax-VisionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henryyi.Relax-VisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Relax-Vision";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		809567122130EC3D00E2D34D /* Build configuration list for PBXProject "Relax-Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8095673D2130EC3F00E2D34D /* Debug */,
+				8095673E2130EC3F00E2D34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8095673F2130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809567402130EC3F00E2D34D /* Debug */,
+				809567412130EC3F00E2D34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809567422130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-VisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809567432130EC3F00E2D34D /* Debug */,
+				809567442130EC3F00E2D34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809567452130EC3F00E2D34D /* Build configuration list for PBXNativeTarget "Relax-VisionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809567462130EC3F00E2D34D /* Debug */,
+				809567472130EC3F00E2D34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8095670F2130EC3D00E2D34D /* Project object */;
+}
